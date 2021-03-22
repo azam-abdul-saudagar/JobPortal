@@ -16,6 +16,9 @@
             <asp:HyperLink ID="ViewProfileHyperLink" runat="server" NavigateUrl="~/CompanyPersonalDataEntryPg.aspx">View Profile</asp:HyperLink>
             <br />
             <asp:Button ID="AddJobButton" runat="server" OnClick="AddJobButton_Click" Text="ADD JOB" />
+            <br />
+            <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </div>
     </form>
 </body>

@@ -24,48 +24,57 @@ namespace JobPortalPractice
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// JobSeekerNameLabel control.
+        /// LogoutButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label JobSeekerNameLabel;
+        protected global::System.Web.UI.WebControls.Button LogoutButton;
 
         /// <summary>
-        /// JobNameTextBox control.
+        /// NameUser control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox JobNameTextBox;
+        protected global::System.Web.UI.WebControls.Label NameUser;
 
         /// <summary>
-        /// LocationTextBox control.
+        /// JobTitle control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox LocationTextBox;
+        protected global::System.Web.UI.WebControls.TextBox JobTitle;
 
         /// <summary>
-        /// Button1 control.
+        /// Location control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.TextBox Location;
 
         /// <summary>
-        /// PersonalDetailHyperLink control.
+        /// SearchButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink PersonalDetailHyperLink;
+        protected global::System.Web.UI.WebControls.Button SearchButton;
+
+        /// <summary>
+        /// ContainerJob control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl ContainerJob;
     }
 }

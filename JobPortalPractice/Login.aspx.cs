@@ -38,7 +38,7 @@ namespace JobPortalPractice
                 }
                 if (foundAccType == "Job Seeker")
                 {
-                    Response.Redirect("userHomePg.aspx");
+                    Response.Redirect("jobSeekerHomePg.aspx");
                 }
                 else if(foundAccType == "Company")
                 {
