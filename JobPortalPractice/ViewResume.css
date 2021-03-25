@@ -1,0 +1,192 @@
+﻿*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    /* font-size: 16px; */
+    line-height: 1.7;
+    color: #777;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #000;
+}
+
+h3 {
+    font-size: 2.2rem;
+    color: #000;
+    background-color: #F5F6F7;
+    border-left: 4px solid #55c57a;
+    border-radius: 5px;
+    padding: 0.5rem 2rem;
+    margin-bottom: 1.5rem;
+}
+
+p, li {
+    font-size: 1.6rem;
+    list-style: none;
+}
+
+.box {
+    border-bottom: 2px solid #55c57a;
+    border-radius: 5px;
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+}
+
+.header {
+    font-size: 1.6rem;
+    padding: 20rem 0 10rem 0;
+}
+
+.header__content {
+    border-bottom-style: 2px solid #55c57a;
+    position: relative;
+    padding: 5rem 10rem;
+}
+
+.header__features--main {
+    display: inline-block;
+    width: 50%;
+}
+
+.header__features--sub {
+    display: inline-block;
+    float: right;
+    width: 50%;
+}
+
+.verified-sign {
+    background-color: #55c57a;
+    color: white;
+    border-radius: 3px;
+    border: none;
+    padding: 2px 6px;
+}
+
+.border-green {
+    border-bottom: 2px solid green;
+}
+
+.body {
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 4rem;
+    margin: 10rem 38rem;
+}
+
+.body__sub-part {
+    margin-bottom: 4rem;
+}
+
+    .body__sub-part h4 {
+        margin-bottom: 4rem;
+    }
+
+
+/* button */
+
+
+.btn, .btn:link, .btn:visited {
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    border-radius: 10rem;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: all 0.2s;
+    position: relative;
+    font-size: 1.6rem;
+    border: none;
+    cursor: pointer;
+}
+
+    .btn:hover {
+        transform: translateY(-0.3rem);
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+    }
+
+        .btn:hover::after {
+            transform: scaleX(1.5) scaleY(1.7);
+            opacity: 0;
+        }
+
+    .btn:active, .btn:focus {
+        outline: none;
+        transform: translateX(-0.2rem);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+    }
+
+.btn--white {
+    background-color: #fff;
+    color: #777;
+}
+
+    .btn--white::after {
+        background-color: #fff;
+    }
+
+.btn--green {
+    background-color: #55c57a;
+    color: #fff;
+}
+
+    .btn--green::after {
+        background-color: #55c57a;
+    }
+
+.btn::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: all 0.4s;
+}
+
+.btn--animated {
+    animation: moveInBottom 0.5s ease-out 0.75s;
+    /* to make button to not show up at the start */
+    animation-fill-mode: backwards;
+}
+
+.btn-text:link, .btn-text:visited {
+    color: #55c57a;
+    font-size: 1.6rem;
+    display: inline-block;
+    border-bottom: 1px solid #55c57a;
+    text-decoration: none;
+    transition: all 0.2s;
+    padding: 3px;
+}
+
+.btn-text:hover {
+    color: #fff;
+    background-color: #55c57a;
+    transform: translateY(-0.3rem);
+    box-shadow: 0px 1rem 2rem rgba(0, 0, 0, 0.3);
+}
+
+.btn-text:active {
+    transform: translateY(-0.1rem);
+    box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.3);
+}

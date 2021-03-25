@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="addJob.aspx.cs" Inherits="JobPortalPractice.addJob" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AddJob.aspx.cs" Inherits="JobPortalPractice.addJob" %>
 
 <!DOCTYPE html>
 

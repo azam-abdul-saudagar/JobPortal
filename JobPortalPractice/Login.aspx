@@ -9,10 +9,10 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:TextBox ID="UserNameTextBox" runat="server">username</asp:TextBox>
+            <asp:TextBox ID="UserNameTextBox" runat="server" placeholder="username"></asp:TextBox>
             <br />
             <br />
-            <asp:TextBox ID="PasswordTextBox" runat="server">password</asp:TextBox>
+            <asp:TextBox ID="PasswordTextBox" runat="server" placeholder="password"></asp:TextBox>
             <br />
             <br />
             <asp:Button ID="LoginButton" runat="server" OnClick="LoginButton_Click" Text="Login" />

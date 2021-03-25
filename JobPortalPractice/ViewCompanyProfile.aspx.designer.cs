@@ -11,7 +11,7 @@ namespace JobPortalPractice
 {
 
 
-    public partial class companyHomePg
+    public partial class ViewCompanyProfile
     {
 
         /// <summary>
@@ -24,102 +24,102 @@ namespace JobPortalPractice
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// LogoutButton control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button LogoutButton;
-
-        /// <summary>
         /// CompanyName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label CompanyName;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl CompanyName;
 
         /// <summary>
-        /// JobTitle control.
+        /// CompanyTagline control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox JobTitle;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl CompanyTagline;
 
         /// <summary>
-        /// Location control.
+        /// Category control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Location;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Category;
 
         /// <summary>
-        /// SearchButton control.
+        /// OwnerName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button SearchButton;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl OwnerName;
 
         /// <summary>
-        /// ContainerJob control.
+        /// ContactNo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl ContainerJob;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl ContactNo;
 
         /// <summary>
-        /// CompanyNameLabel control.
+        /// Address control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label CompanyNameLabel;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Address;
 
         /// <summary>
-        /// TextBox2 control.
+        /// Facebook control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox2;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Facebook;
 
         /// <summary>
-        /// TextBox1 control.
+        /// Twitter control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Twitter;
 
         /// <summary>
-        /// Button1 control.
+        /// LinkedIn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl LinkedIn;
 
         /// <summary>
-        /// ViewProfileHyperLink control.
+        /// WorkingTime control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink ViewProfileHyperLink;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl WorkingTime;
+
+        /// <summary>
+        /// Country control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Country;
     }
 }

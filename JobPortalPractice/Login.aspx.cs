@@ -42,7 +42,7 @@ namespace JobPortalPractice
                 }
                 else if(foundAccType == "Company")
                 {
-                    Response.Redirect("companyHomePg.aspx");
+                    Response.Redirect("CompanyHomePg.aspx");
                 }
                 else
                 {

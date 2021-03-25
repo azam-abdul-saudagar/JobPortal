@@ -67,9 +67,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="addJob.aspx" />
-    <Content Include="companyHomePg.aspx" />
+    <Content Include="AddJob.aspx" />
+    <Content Include="CompanyHomePg.aspx" />
+    <Content Include="CompanyHomePg.css" />
     <Content Include="CompanyPersonalDataEntryPg.aspx" />
+    <Content Include="CompanyPersonalDataEntryPg.css" />
     <Content Include="JobDetail.aspx" />
     <Content Include="JobDetail.css" />
     <Content Include="JobSeekerHomePg.css" />
@@ -79,22 +81,27 @@
     <Content Include="signup.aspx" />
     <Content Include="jobSeekerHomePg.aspx" />
     <Content Include="SuccessfullyAppliedForJob.aspx" />
+    <Content Include="UploadResume.aspx" />
+    <Content Include="UploadResume.css" />
+    <Content Include="ViewCompanyProfile.aspx" />
+    <Content Include="ViewResume.aspx" />
+    <Content Include="ViewResume.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="addJob.aspx.cs">
-      <DependentUpon>addJob.aspx</DependentUpon>
+    <Compile Include="AddJob.aspx.cs">
+      <DependentUpon>AddJob.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="addJob.aspx.designer.cs">
-      <DependentUpon>addJob.aspx</DependentUpon>
+    <Compile Include="AddJob.aspx.designer.cs">
+      <DependentUpon>AddJob.aspx</DependentUpon>
     </Compile>
-    <Compile Include="companyHomePg.aspx.cs">
-      <DependentUpon>companyHomePg.aspx</DependentUpon>
+    <Compile Include="CompanyHomePg.aspx.cs">
+      <DependentUpon>CompanyHomePg.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="companyHomePg.aspx.designer.cs">
-      <DependentUpon>companyHomePg.aspx</DependentUpon>
+    <Compile Include="CompanyHomePg.aspx.designer.cs">
+      <DependentUpon>CompanyHomePg.aspx</DependentUpon>
     </Compile>
     <Compile Include="CompanyPersonalDataEntryPg.aspx.cs">
       <DependentUpon>CompanyPersonalDataEntryPg.aspx</DependentUpon>
@@ -152,6 +159,27 @@
     </Compile>
     <Compile Include="SuccessfullyAppliedForJob.aspx.designer.cs">
       <DependentUpon>SuccessfullyAppliedForJob.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UploadResume.aspx.cs">
+      <DependentUpon>UploadResume.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UploadResume.aspx.designer.cs">
+      <DependentUpon>UploadResume.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewCompanyProfile.aspx.cs">
+      <DependentUpon>ViewCompanyProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewCompanyProfile.aspx.designer.cs">
+      <DependentUpon>ViewCompanyProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewResume.aspx.cs">
+      <DependentUpon>ViewResume.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewResume.aspx.designer.cs">
+      <DependentUpon>ViewResume.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

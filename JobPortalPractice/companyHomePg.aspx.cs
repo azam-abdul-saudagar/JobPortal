@@ -32,18 +32,23 @@ namespace JobPortalPractice
                 }
                 if (companyName != "")
                 {
-                    CompanyNameLabel.Text = companyName;
+                    CompanyName.Text = companyName;
                 }
                 else
                 {
-                    CompanyNameLabel.Text = "Tap edit button to Provide Your Personal Info";
+                    CompanyName.Text = "Tap edit button to Provide Your Personal Info";
                 }
             }
         }
 
-        protected void AddJobButton_Click(object sender, EventArgs e)
+        protected void LogoutButton_Click(object sender, EventArgs e)
         {
-            Response.Redirect("addJob.aspx");
+            Response.Redirect("Login.aspx");
+        }
+
+        protected void SearchButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

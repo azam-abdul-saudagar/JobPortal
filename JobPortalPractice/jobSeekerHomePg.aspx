@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Job Seeker Home Page</title>
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
   <!-- css -->
     <link rel="stylesheet" href="JobSeekerHomePg.css" />
@@ -31,7 +31,7 @@
           <li class="list-group-item">
               <a href="JobSeekerPersonalDataEntryPg.aspx">Edit Profile</a></li>
           <li class="list-group-item">
-              <a href="#">Upload Resume</a></li>
+              <a href="UploadResume.aspx">Upload Resume</a></li>
           <li class="list-group-item">
               <a href="#">Accepted Proporsals</a></li>
           <li class="list-group-item">
