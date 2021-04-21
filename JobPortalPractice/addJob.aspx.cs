@@ -19,22 +19,22 @@ namespace JobPortalPractice
         {
 
             string username = Session["username"].ToString();
-            string companyName = CompanyNameTextBox.Text;
-            string jobTitle = JobTitleTextBox.Text;
-            string category = CategoryTextBox.Text;
-            string description = DescriptionTextBox.Text;
-            string salary = SalaryRangeTextBox.Text;
-            string experience = ExperienceTextBox.Text;
-            string jobType = JobTypeDropDownList.Text;
-            int vacancy = int.Parse(NoVacancyTextBox.Text);
-            string qualificationRequired = QualificationTextBox.Text;
-            string skills = SkillsTextBox.Text;
-            string email = EmailTextBox.Text;
-            string contact = ContactTextBox.Text;
-            string address = AddressTextBox.Text;
-            string city = CityTextBox.Text;
-            string state = StateTextBox.Text;
-            string country = CountryTextBox.Text;
+            string companyName = CompanyNameTextBox.Value;
+            string jobTitle = JobTitleTextBox.Value;
+            string category = CategoryTextBox.Value;
+            string description = DescriptionTextBox.Value;
+            string salary = SalaryRangeTextBox.Value;
+            string experience = ExperienceTextBox.Value;
+            string jobType = JobTypeDropDownList.Value;
+            int vacancy = int.Parse(NoVacancyTextBox.Value);
+            string qualificationRequired = QualificationTextBox.Value;
+            string skills = SkillsTextBox.Value;
+            string email = EmailTextBox.Value;
+            string contact = ContactTextBox.Value;
+            string address = AddressTextBox.Value;
+            string city = CityTextBox.Value;
+            string state = StateTextBox.Value;
+            string country = CountryTextBox.Value;
 
             string CS = "data source=.; database = OnlineJobPortal; integrated security=SSPI";
             using (SqlConnection con = new SqlConnection(CS))

@@ -67,34 +67,109 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Actions.aspx" />
     <Content Include="AddJob.aspx" />
+    <Content Include="AddJob.css" />
+    <Content Include="AdminActions.aspx" />
+    <Content Include="AdminFeedbackPg.aspx" />
+    <Content Include="AdminHomePg.aspx" />
+    <Content Include="AdminQueries.aspx" />
+    <Content Include="AppliedJob.aspx" />
+    <Content Include="AppliedJob.css" />
+    <Content Include="CompanyHelpPg.aspx" />
     <Content Include="CompanyHomePg.aspx" />
     <Content Include="CompanyHomePg.css" />
     <Content Include="CompanyPersonalDataEntryPg.aspx" />
     <Content Include="CompanyPersonalDataEntryPg.css" />
+    <Content Include="HomePg.aspx" />
+    <Content Include="HomePg.css" />
+    <Content Include="Images\peoplesearch3.png" />
+    <Content Include="JobSeekerFeedbackPg.aspx" />
+    <Content Include="JobSeekerFeedbackPg.css" />
+    <Content Include="JobSeekerHelpPg.aspx" />
+    <Content Include="Login.css" />
+    <Content Include="RemoveAppliedJob.aspx" />
+    <Content Include="JobApplications.aspx" />
+    <Content Include="JobApplications.css" />
     <Content Include="JobDetail.aspx" />
     <Content Include="JobDetail.css" />
     <Content Include="JobSeekerHomePg.css" />
     <Content Include="JobSeekerPersonalDataEntryPg.aspx" />
     <Content Include="Login.aspx" />
+    <Content Include="ReportSpam.aspx" />
+    <Content Include="ReportSpam.css" />
+    <Content Include="SearchJobDetail.aspx" />
+    <Content Include="SearchJobDetail.css" />
     <Content Include="SearchPg.aspx" />
+    <Content Include="SearchPg.css" />
+    <Content Include="SelectedCandidate.aspx" />
     <Content Include="signup.aspx" />
     <Content Include="jobSeekerHomePg.aspx" />
-    <Content Include="SuccessfullyAppliedForJob.aspx" />
-    <Content Include="UploadResume.aspx" />
+    <Content Include="ApplyForJob.aspx" />
+    <Content Include="signup.css" />
     <Content Include="UploadResume.css" />
+    <Content Include="UploadResume.aspx" />
     <Content Include="ViewCompanyProfile.aspx" />
     <Content Include="ViewResume.aspx" />
     <Content Include="ViewResume.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Actions.aspx.cs">
+      <DependentUpon>Actions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Actions.aspx.designer.cs">
+      <DependentUpon>Actions.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AddJob.aspx.cs">
       <DependentUpon>AddJob.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="AddJob.aspx.designer.cs">
       <DependentUpon>AddJob.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminActions.aspx.cs">
+      <DependentUpon>AdminActions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminActions.aspx.designer.cs">
+      <DependentUpon>AdminActions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminFeedbackPg.aspx.cs">
+      <DependentUpon>AdminFeedbackPg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminFeedbackPg.aspx.designer.cs">
+      <DependentUpon>AdminFeedbackPg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminHomePg.aspx.cs">
+      <DependentUpon>AdminHomePg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminHomePg.aspx.designer.cs">
+      <DependentUpon>AdminHomePg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminQueries.aspx.cs">
+      <DependentUpon>AdminQueries.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminQueries.aspx.designer.cs">
+      <DependentUpon>AdminQueries.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AppliedJob.aspx.cs">
+      <DependentUpon>AppliedJob.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AppliedJob.aspx.designer.cs">
+      <DependentUpon>AppliedJob.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyHelpPg.aspx.cs">
+      <DependentUpon>CompanyHelpPg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompanyHelpPg.aspx.designer.cs">
+      <DependentUpon>CompanyHelpPg.aspx</DependentUpon>
     </Compile>
     <Compile Include="CompanyHomePg.aspx.cs">
       <DependentUpon>CompanyHomePg.aspx</DependentUpon>
@@ -109,6 +184,41 @@
     </Compile>
     <Compile Include="CompanyPersonalDataEntryPg.aspx.designer.cs">
       <DependentUpon>CompanyPersonalDataEntryPg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomePg.aspx.cs">
+      <DependentUpon>HomePg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomePg.aspx.designer.cs">
+      <DependentUpon>HomePg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JobSeekerFeedbackPg.aspx.cs">
+      <DependentUpon>JobSeekerFeedbackPg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JobSeekerFeedbackPg.aspx.designer.cs">
+      <DependentUpon>JobSeekerFeedbackPg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JobSeekerHelpPg.aspx.cs">
+      <DependentUpon>JobSeekerHelpPg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JobSeekerHelpPg.aspx.designer.cs">
+      <DependentUpon>JobSeekerHelpPg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RemoveAppliedJob.aspx.cs">
+      <DependentUpon>RemoveAppliedJob.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RemoveAppliedJob.aspx.designer.cs">
+      <DependentUpon>RemoveAppliedJob.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JobApplications.aspx.cs">
+      <DependentUpon>JobApplications.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JobApplications.aspx.designer.cs">
+      <DependentUpon>JobApplications.aspx</DependentUpon>
     </Compile>
     <Compile Include="JobDetail.aspx.cs">
       <DependentUpon>JobDetail.aspx</DependentUpon>
@@ -132,12 +242,33 @@
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportSpam.aspx.cs">
+      <DependentUpon>ReportSpam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportSpam.aspx.designer.cs">
+      <DependentUpon>ReportSpam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchJobDetail.aspx.cs">
+      <DependentUpon>SearchJobDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchJobDetail.aspx.designer.cs">
+      <DependentUpon>SearchJobDetail.aspx</DependentUpon>
+    </Compile>
     <Compile Include="SearchPg.aspx.cs">
       <DependentUpon>SearchPg.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="SearchPg.aspx.designer.cs">
       <DependentUpon>SearchPg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SelectedCandidate.aspx.cs">
+      <DependentUpon>SelectedCandidate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SelectedCandidate.aspx.designer.cs">
+      <DependentUpon>SelectedCandidate.aspx</DependentUpon>
     </Compile>
     <Compile Include="signup.aspx.cs">
       <DependentUpon>signup.aspx</DependentUpon>
@@ -153,12 +284,12 @@
     <Compile Include="jobSeekerHomePg.aspx.designer.cs">
       <DependentUpon>jobSeekerHomePg.aspx</DependentUpon>
     </Compile>
-    <Compile Include="SuccessfullyAppliedForJob.aspx.cs">
-      <DependentUpon>SuccessfullyAppliedForJob.aspx</DependentUpon>
+    <Compile Include="ApplyForJob.aspx.cs">
+      <DependentUpon>ApplyForJob.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="SuccessfullyAppliedForJob.aspx.designer.cs">
-      <DependentUpon>SuccessfullyAppliedForJob.aspx</DependentUpon>
+    <Compile Include="ApplyForJob.aspx.designer.cs">
+      <DependentUpon>ApplyForJob.aspx</DependentUpon>
     </Compile>
     <Compile Include="UploadResume.aspx.cs">
       <DependentUpon>UploadResume.aspx</DependentUpon>

@@ -60,5 +60,18 @@ namespace JobPortalPractice
 
             
         }
+
+        protected void ViewCompanyProfileButton_Click(object sender, EventArgs e)
+        {
+            string jobId = JobId.InnerText;
+            Response.Redirect("ViewCompanyProfile.aspx?jobId=" + jobId + "");
+        }
+
+        protected void ReportSpamButton_Click(object sender, EventArgs e)
+        {
+            string jobId = JobId.InnerText;
+            Response.Redirect("ReportSpam.aspx?jobId=" + jobId + "");
+
+        }
     }
 }

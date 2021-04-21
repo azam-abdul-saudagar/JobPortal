@@ -24,22 +24,22 @@ namespace JobPortalPractice
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// KeywordTextBox control.
+        /// JobTitle control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox KeywordTextBox;
+        protected global::System.Web.UI.WebControls.TextBox JobTitle;
 
         /// <summary>
-        /// LocationTextBox control.
+        /// Location control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox LocationTextBox;
+        protected global::System.Web.UI.WebControls.TextBox Location;
 
         /// <summary>
         /// SearchButton control.
@@ -49,15 +49,6 @@ namespace JobPortalPractice
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button SearchButton;
-
-        /// <summary>
-        /// FoundResultTextBox control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label FoundResultTextBox;
 
         /// <summary>
         /// ContainerJob control.

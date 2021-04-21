@@ -18,8 +18,8 @@ namespace JobPortalPractice
         protected void LoginButton_Click(object sender, EventArgs e)
         {
             string CS = "data source=.; database = OnlineJobPortal; integrated security=SSPI";
-            string username = UserNameTextBox.Text;
-            string password = PasswordTextBox.Text;
+            string username = UserNameTextBox.Value;
+            string password = PasswordTextBox.Value;
             string foundUsername = "";
             string foundAccType = "";
             Session["username"] = username;
@@ -43,6 +43,10 @@ namespace JobPortalPractice
                 else if(foundAccType == "Company")
                 {
                     Response.Redirect("CompanyHomePg.aspx");
+                }
+                else if(foundAccType == "Admin")
+                {
+                    Response.Redirect("AdminHomePg.aspx");
                 }
                 else
                 {

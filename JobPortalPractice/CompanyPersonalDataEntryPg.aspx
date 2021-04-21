@@ -148,12 +148,9 @@
                         </div>
                     </div>
                 </div>
-                <asp:Button ID="Button1" type="submit" class="bttn bttn--green" runat="server" Text="UPDATE INFO" />
+                <asp:Button ID="saveButton" type="submit" class="bttn bttn--green" runat="server" Text="UPDATE INFO" OnClick="saveButton_Click1" />
             </form>
         </div>
-
-
-
     </div>
         </div>
     </form>

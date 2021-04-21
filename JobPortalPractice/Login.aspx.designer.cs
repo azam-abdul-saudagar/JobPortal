@@ -30,7 +30,7 @@ namespace JobPortalPractice
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox UserNameTextBox;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText UserNameTextBox;
 
         /// <summary>
         /// PasswordTextBox control.
@@ -39,7 +39,7 @@ namespace JobPortalPractice
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox PasswordTextBox;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText PasswordTextBox;
 
         /// <summary>
         /// LoginButton control.

@@ -1,0 +1,68 @@
+﻿*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #777;
+    padding: 4rem 6rem;
+    background-color: #F6F7F9;
+}
+
+.applied-job {
+    background-color: #fff;
+    padding: 2rem 4rem;
+}
+
+h1 {
+    border-bottom: 1px solid green;
+    color: rgba(0,0,0,.8);
+    padding: 1rem 0 2rem;
+}
+
+table {
+    padding: 4rem;
+}
+
+th {
+    color: rgba(0,0,0,.8);
+    font-weight: 500;
+    width: 28rem;
+    padding: 2rem 0;
+}
+
+.table {
+    border: none;
+}
+
+.thead {
+    border-bottom: 0.5px solid rgba(0,0,0,0.2);
+}
+
+td {
+    padding: 2rem 0;
+}
+
+tr:not(:last-child) {
+    border-bottom: 0.5px solid rgba(0,0,0,0.2);
+}
+
+button {
+    background-color: red;
+    color: #fff;
+    padding: 0.8rem 1.8rem;
+    border: none;
+    border-radius: 2.5px;
+}

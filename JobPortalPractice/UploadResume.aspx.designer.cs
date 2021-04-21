@@ -11,7 +11,7 @@ namespace JobPortalPractice
 {
 
 
-    public partial class UploadResume
+    public partial class UploadResumee1
     {
 
         /// <summary>

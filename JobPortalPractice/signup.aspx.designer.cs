@@ -24,13 +24,13 @@ namespace JobPortalPractice
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// AccountTypeDropDownList control.
+        /// AccountType control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList AccountTypeDropDownList;
+        protected global::System.Web.UI.HtmlControls.HtmlSelect AccountType;
 
         /// <summary>
         /// UserNameTextBox control.
@@ -39,7 +39,7 @@ namespace JobPortalPractice
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox UserNameTextBox;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText UserNameTextBox;
 
         /// <summary>
         /// EmailTextBox control.
@@ -48,7 +48,7 @@ namespace JobPortalPractice
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox EmailTextBox;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText EmailTextBox;
 
         /// <summary>
         /// PasswordTextBox control.
@@ -57,7 +57,7 @@ namespace JobPortalPractice
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox PasswordTextBox;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText PasswordTextBox;
 
         /// <summary>
         /// ConfirmPasswordTextBox control.
@@ -66,7 +66,16 @@ namespace JobPortalPractice
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ConfirmPasswordTextBox;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText ConfirmPasswordTextBox;
+
+        /// <summary>
+        /// message control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl message;
 
         /// <summary>
         /// SignUpButton control.
@@ -78,12 +87,12 @@ namespace JobPortalPractice
         protected global::System.Web.UI.WebControls.Button SignUpButton;
 
         /// <summary>
-        /// Label1 control.
+        /// Label2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.Label Label2;
     }
 }

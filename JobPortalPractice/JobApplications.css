@@ -1,0 +1,141 @@
+﻿*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 15px;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #777;
+}
+
+h4 {
+    font-size: 0.8rem;
+}
+
+li {
+    list-style: none;
+}
+
+/*hr {
+  border-color: green;
+}*/
+
+
+.section-main {
+    padding: 2rem;
+}
+
+.features {
+    border-right: 1px solid #777;
+    padding-bottom: 8rem;
+}
+
+.list-group-item {
+    padding: 2rem 0;
+    border: none;
+    font-size: 1.2rem;
+}
+
+.search-section {
+    position: relative;
+}
+
+.search-box {
+    outline: none;
+    width: 40%;
+    padding: 0.5rem 1.4rem;
+    margin-left: 4rem;
+}
+
+#JobTitle {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.location {
+    display: inline-block;
+}
+
+#Location {
+    margin-left: -2rem;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.bttn, .bttn:link, .bttn:visited {
+    text-decoration: none;
+    padding: .4rem 1.5rem;
+    border-radius: 10rem;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: all 0.2s;
+    position: absolute;
+    top: 0.2rem;
+    right: 14.84rem;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+    .bttn:hover {
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+    }
+
+        .bttn:hover::after {
+            transform: scaleX(1.5) scaleY(1.7);
+            opacity: 0;
+        }
+
+    .bttn:active, .btn:focus {
+        outline: none;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+    }
+
+.bttn--green {
+    background-color: #55c57a;
+    color: #fff;
+}
+
+    .bttn--green::after {
+        background-color: #55c57a;
+    }
+
+.container-job {
+    padding: 2rem;
+    margin-top: 2rem;
+    overflow-y: scroll;
+    height: 39rem;
+}
+
+.job {
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    /* box-shadow: 0 2rem 5rem rgba(0, 0, 0, .2); */
+    padding: 0.5rem 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.full-name {
+    font-size: 1.4rem;
+    color: #000;
+}
+
+.container__job-button {
+    position: relative;
+}
+
+.job-btn {
+    width: 9rem;
+    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 0;
+}

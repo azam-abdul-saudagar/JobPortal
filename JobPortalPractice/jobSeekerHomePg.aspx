@@ -23,29 +23,31 @@
     <div class="row">
       <div class="col-lg-2">
         <div class="features">
-        <h3 id="NameUser" class="mb-5"><asp:Label ID="NameUser" runat="server" Text=""></asp:Label></h3>
+        <h3 id="NameUser" class="mb-5"><asp:Label ID="JobSeekerNameUser" runat="server" Text=""></asp:Label></h3>
         
         <ul class="list-group">
-          <li class="list-group-item">
-              <a href="#">View Profile</a></li>
+          <!--<li class="list-group-item">
+              <a href="#">View Profile</a></li>-->
           <li class="list-group-item">
               <a href="JobSeekerPersonalDataEntryPg.aspx">Edit Profile</a></li>
           <li class="list-group-item">
               <a href="UploadResume.aspx">Upload Resume</a></li>
+          <!--<li class="list-group-item">
+              <a href="#">Accepted Proporsals</a></li>-->
           <li class="list-group-item">
-              <a href="#">Accepted Proporsals</a></li>
+              <a href="AppliedJob.aspx">Applied Job</a></li>
+        <li class="list-group-item">
+              <a href="JobSeekerHelpPg.aspx">Help</a></li>
           <li class="list-group-item">
-              <a href="#">Applied Job</a></li>
-          <li class="list-group-item">
-              <a href="#">Contact Admin</a></li>
+              <a href="JobSeekerFeedbackPg.aspx">Feedback</a></li>
         </ul>
       </div>
       </div>
       <div class="col-lg-10">
         <div class="search-section">
-          <form action=# method=post>
-            <asp:TextBox ID="JobTitle" class='search-box' runat="server"  placeholder='Job Title or Keyword' ></asp:TextBox>
-            <asp:TextBox ID="Location" class='search-box' runat="server"  placeholder='Location' ></asp:TextBox>
+          <form action="#" method="post">
+            <asp:TextBox ID="JobTitle" class='search-box' runat="server"  placeholder='Job Title or Keyword' Text=""></asp:TextBox>
+            <asp:TextBox ID="Location" class='search-box' runat="server"  placeholder='Location' Text=""></asp:TextBox>
             <asp:Button ID="SearchButton" class='bttn btn-search bttn--green' type='button' name='button' runat="server" Text="Search" OnClick="SearchButton_Click" />
           </form>
         </div>

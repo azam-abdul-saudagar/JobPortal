@@ -5,16 +5,17 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Job Detail</title>
-    <link rel="stylesheet" href="JobDetail.css"
+    <link rel="stylesheet" href="JobDetail.css" />
 </head>
 <body>
     <form id="form1" runat="server">
+        
         <div>
             <div class="header">
         <div class="header__content">
             <h2 id="JobTitle" runat="server">Front End Developer</h2>
             <div class="header__features--main">
-
+                
                 <h4 id="CompanyName" runat="server">Google</h4>
                 <h4 id="Vacancy" runat="server">7 vacancy</h4>
                 <h4 id="Country" runat="server">United Kingdom</h4>
@@ -69,7 +70,8 @@
             
             </p>
         </div>
-        <button type="submit" class="btn btn--green">Apply For This Job</button>
+        <asp:Button ID="ReportSpamButton" class="btn btn--red" runat="server" Text="Report Spam" OnClick="ReportSpamButton_Click" />
+        <asp:Button ID="ViewCompanyProfileButton" class="btn btn--green" runat="server" Text="View Company Profile" OnClick="ViewCompanyProfileButton_Click" />
         </div>
     </form>
 </body>

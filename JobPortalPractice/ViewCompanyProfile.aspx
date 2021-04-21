@@ -18,16 +18,16 @@
 
                     <h4 class="job-title" id="CompanyTagline" runat="server">Front End Designer</h4>
                     <h4 id="Category" runat="server">Software Development</h4>
-                    <h4 id="OwnerName" runat="server">mail@example.com</h4>
+                    <h4 id="OwnerName" runat="server">kingllc@king.com</h4>
                     <h4 id="ContactNo" runat="server">91 234 567 8765</h4>
-                    <h4 id="Address" runat="server">Adress</h4>
+                    <h4 id="Address" runat="server">California, USA</h4>
                 </div>
                 <div class="header__features--sub">
-                    <h4>Offered Salary : <span id="Facebook" runat="server">carol@facebook.com</span></h4>
-                    <h4>Experience : <span id="Twitter" runat="server">carol@twitter.com</span></h4>
-                    <h4>Gender : <span id="LinkedIn" runat="server">king@linkedin.com</span></h4>
-                    <h4>Qualification : <span id="WorkingTime" runat="server">8am - 10pm</span></h4>
-                    <h4>Qualification : <span id="Country" runat="server">USA</span></h4>
+                    <h4>Facebook : <span id="Facebook" runat="server">carol@facebook.com</span></h4>
+                    <h4>Twitter : <span id="Twitter" runat="server">carol@twitter.com</span></h4>
+                    <h4>LinkedIn : <span id="LinkedIn" runat="server">king@linkedin.com</span></h4>
+                    <h4>Working time : <span id="WorkingTime" runat="server">8am - 10pm</span></h4>
+                    <h4>Country : <span id="Country" runat="server">USA</span></h4>
                 </div>
             </div>
         </div>

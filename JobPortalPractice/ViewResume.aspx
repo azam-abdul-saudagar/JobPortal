@@ -10,22 +10,24 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <h1 class="JobSeekerUserName" id="JobSeekerUserName" runat="server"></h1>
             <div class="header">
         <div class="box">
             <div class="header__content">
-                <h2>Alden Smith</h2>
+                
+                <h2 id="FullName" runat="server">Alden Smith</h2>
                 <div class="header__features--main">
 
-                    <h4 class="job-title">Front End Designer</h4>
-                    <h4>2726 Shinn, New York</h4>
-                    <h4>mail@example.com</h4>
-                    <h4>91 234 567 8765</h4>
+                    <h4 class="job-title" id="JobTitle" runat="server">Front End Designer</h4>
+                    <h4 id="ShortAddress" runat="server">2726 Shinn, New York</h4>
+                    <h4 id="Email" runat="server">mail@example.com</h4>
+                    <h4 id="ContactNo" runat="server">91 234 567 8765</h4>
                 </div>
                 <div class="header__features--sub">
-                    <h4>Offered Salary : <span id="job-type">20K To 50K/Month</span></h4>
-                    <h4>Experience : <span id="experience">3 Year Exp.</span></h4>
-                    <h4>Gender : <span id="age">Male</span></h4>
-                    <h4>Qualification : <span id="experience">Masters</span></h4>
+                    <h4>Offered Salary : <span id="OfferedSalary" runat="server">20K To 50K/Month</span></h4>
+                    <h4>Experience : <span id="Experience" runat="server">3 Year Exp.</span></h4>
+                    <h4>Gender : <span id="InputState" runat="server">Male</span></h4>
+                    <h4>Qualification : <span id="RecentQualification" runat="server">Masters</span></h4>
                 </div>
             </div>
         </div>
@@ -36,7 +38,7 @@
     <div class="body">
         <div class="body__sub-part">
             <h3>About Candidate</h3>
-            <p>"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and
+            <p id="AboutYou" runat="server">"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and
                 demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the
                 pain and trouble that are bound to ensue.
 
@@ -47,7 +49,7 @@
         </div>
         <div class="body__sub-part">
             <h3>Education</h3>
-            <p>
+            <p id="Education" runat="server">
             <ul>
                 <li>There are many variations of passages of Lorem Ipsum available</li>
                 <li>There are many variations of passages of Lorem Ipsum available</li>
@@ -57,7 +59,7 @@
             </p>
         </div>
         <div class="body__sub-part">
-            <h3>Work Experience</h3>
+            <h3 id="WorkExperience" runat="server">Work Experience</h3>
             <p>
             <ul>
                 <li>There are many variations of passages of Lorem Ipsum available</li>
@@ -69,7 +71,7 @@
         </div>
         <div class="body__sub-part">
             <h3>Skills</h3>
-            <p>
+            <p id="Skills" runat="server">
             <ul>
 
                 <li>CSS</li>
@@ -83,8 +85,8 @@
             <h3>Contact</h3>
             <p>
             <ul>
-                <li id="email">mail@example.com</li>
-                <li id="contactNo">91 234 567 8765</li>
+                <li id="ContactEmail" runat="server">mail@example.com</li>
+                <li id="ContactContactNo" runat="server">91 234 567 8765</li>
             </ul>
             </p>
         </div>
@@ -92,10 +94,10 @@
             <h3>Location</h3>
             <p>
             <ul>
-                <li>City : <span id="city">City</span></li>
-                <li>State : <span id="state">State</span></li>
-                <li>Country : <span id="country">Country</span></li>
-                <li>Full address : <span id="Fulladdress">Chandigarh Junction railway station
+                <li>City : <span id="City" runat="server">City</span></li>
+                <li>State : <span id="State" runat="server">State</span></li>
+                <li>Country : <span id="Country" runat="server">Country</span></li>
+                <li>Full address : <span id="FullAddress" runat="server">Chandigarh Junction railway station
                         Sector 78, Sahibzada Ajit Singh Nagar, Punjab 140308</span></li>
             </ul>
             </p>

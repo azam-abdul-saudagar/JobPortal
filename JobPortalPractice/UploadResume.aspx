@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="UploadResume.aspx.cs" Inherits="JobPortalPractice.UploadResume" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="UploadResume.aspx.cs" Inherits="JobPortalPractice.UploadResumee1" %>
 
 <!DOCTYPE html>
 

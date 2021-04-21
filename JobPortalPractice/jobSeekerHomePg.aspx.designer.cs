@@ -33,13 +33,13 @@ namespace JobPortalPractice
         protected global::System.Web.UI.WebControls.Button LogoutButton;
 
         /// <summary>
-        /// NameUser control.
+        /// JobSeekerNameUser control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label NameUser;
+        protected global::System.Web.UI.WebControls.Label JobSeekerNameUser;
 
         /// <summary>
         /// JobTitle control.

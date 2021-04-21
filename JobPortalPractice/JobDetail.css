@@ -131,6 +131,11 @@ p, li {
     color: #fff;
 }
 
+.btn--red {
+    background-color: #f00;
+    color: #fff;
+}
+
     .btn--green::after {
         background-color: #55c57a;
     }

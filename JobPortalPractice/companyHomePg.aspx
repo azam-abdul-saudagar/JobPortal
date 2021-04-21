@@ -33,17 +33,17 @@
           <li class="list-group-item">
               <a href="AddJob.aspx">Add Job</a></li>
           <li class="list-group-item">
-              <a href="#">Accepted Proporsals</a></li>
+              <a href="SelectedCandidate.aspx">Selected Candidates</a></li>
           <li class="list-group-item">
-              <a href="#">Applied Job</a></li>
+              <a href="JobApplications.aspx">Applications</a></li>
           <li class="list-group-item">
-              <a href="#">Contact Admin</a></li>
+              <a href="CompanyHelpPg.aspx">Help</a></li>
         </ul>
       </div>
       </div>
       <div class="col-lg-10">
         <div class="search-section">
-          <form action=# method=post>
+          <form action="#" method="post">
             <asp:TextBox ID="JobTitle" class='search-box' runat="server"  placeholder='Job Title or Keyword' ></asp:TextBox>
             <asp:TextBox ID="Location" class='search-box' runat="server"  placeholder='Location' ></asp:TextBox>
             <asp:Button ID="SearchButton" class='bttn btn-search bttn--green' type='button' name='button' runat="server" Text="Search" OnClick="SearchButton_Click" />
@@ -64,17 +64,6 @@
   </div>
         </div>
 
-        <!--<asp:Label ID="CompanyNameLabel" runat="server" Text="Company Name"></asp:Label>
-        <asp:TextBox ID="TextBox2" runat="server" style="margin-left: 41px" Width="327px"></asp:TextBox>
-        <asp:TextBox ID="TextBox1" runat="server" style="margin-left: 55px" Width="280px"></asp:TextBox>
-        <asp:Button ID="Button1" runat="server" Text="Button" />
-        <div>
-            <asp:HyperLink ID="ViewProfileHyperLink" runat="server" NavigateUrl="~/CompanyPersonalDataEntryPg.aspx">View Profile</asp:HyperLink>
-            <br />
-            <br />
-            <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        </div>-->
     </form>
 </body>
 </html>

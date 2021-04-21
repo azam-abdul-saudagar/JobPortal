@@ -40,9 +40,7 @@ namespace JobPortalPractice
                     StateTextBox.Value = rdr["state"].ToString();
                     CountryTextBox.Value = rdr["country"].ToString();
                     CityTextBox.Value = rdr["city"].ToString();
-                }
-
-                
+                }               
             }
 
             using (SqlConnection con = new SqlConnection(CS))
@@ -59,13 +57,12 @@ namespace JobPortalPractice
                     //fetching the data from the usersTbl
                     EmailTextBox.Value = rdr["email"].ToString();
                     PasswordTextBox.Value = rdr["password"].ToString();
-
                 }
             }
 
         }
 
-        protected void SaveButton_Click(object sender, EventArgs e)
+        protected void saveButton_Click1(object sender, EventArgs e)
         {
             string personalTblUsername = "";
             string username = Session["username"].ToString();
@@ -84,8 +81,8 @@ namespace JobPortalPractice
             string state = StateTextBox.Value;
             string country = CountryTextBox.Value;
             string city = CityTextBox.Value;
-            
-            
+
+
             string CS = "data source=.; database = OnlineJobPortal; integrated security=SSPI";
             using (SqlConnection con = new SqlConnection(CS))
             {

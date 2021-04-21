@@ -13,11 +13,33 @@ namespace JobPortalPractice
         protected void Page_Load(object sender, EventArgs e)
         {
             string CS = "data source=.; database = OnlineJobPortal; integrated security=SSPI";
-            string username = Session["username"].ToString();
+            string id = Request.QueryString["jobId"];
+            string companyUserName = "";
+            Response.Write("id" + id);
+
             using (SqlConnection con = new SqlConnection(CS))
             {
                 SqlCommand cmd = new SqlCommand();
-                cmd.CommandText = "SELECT * FROM companyPersonalTbl WHERE username='" + username + "';";
+                cmd.CommandText = "SELECT * FROM tblAddJob WHERE ID='" + id + "';";
+                cmd.Connection = con;
+                con.Open();
+                SqlDataReader rdr = cmd.ExecuteReader();
+
+                //Getting the data of the company from companyPersonalTbl;
+                while (rdr.Read())
+                {
+                    //fetching the name from the companyPersonalTbl
+                    companyUserName = rdr["CompanyUsername"].ToString();
+                }
+
+
+            }
+
+            Response.Write("COMPANUYJKFHSKJLDGF" + companyUserName);
+            using (SqlConnection con = new SqlConnection(CS))
+            {
+                SqlCommand cmd = new SqlCommand();
+                cmd.CommandText = "SELECT * FROM companyPersonalTbl WHERE username='" + companyUserName + "';";
                 cmd.Connection = con;
                 con.Open();
                 SqlDataReader rdr = cmd.ExecuteReader();

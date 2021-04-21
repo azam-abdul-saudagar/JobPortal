@@ -1,0 +1,143 @@
+﻿*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    /* font-size: 16px; */
+    line-height: 1.7;
+    color: #777;
+}
+
+.navbar {
+    font-size: 2rem;
+    padding: 1rem 2rem 1rem 3rem;
+}
+
+.navbar-brand {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #000;
+    padding-left: 8rem;
+}
+
+.navbar-brand--portal {
+    color: #55c57a;
+}
+
+.navbar-nav {
+    padding-right: 8rem;
+}
+
+.nav-link {
+    color: rgba(0,0,0,0.65) !important;
+    margin-right: 2rem;
+}
+
+.container-fluid {
+    font-size: 2rem;
+    padding: 4rem;
+}
+
+.heading {
+    padding: 6rem 0 6rem 6rem;
+}
+
+.heading-primary {
+    font-size: 6rem;
+    color: #000;
+    width: 100%;
+}
+
+.heading-secondary {
+    font-size: 2rem;
+    width: 100%;
+    margin-top: 2.5rem;
+}
+
+.search-section {
+    position: relative;
+    margin-top: 12rem;
+    padding-bottom: 30rem;
+}
+
+.search-box {
+    outline: none;
+    width: 51%;
+    padding: 0.5rem 2.2rem;
+}
+
+#JobTitle {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+#Location {
+    margin-left: -2rem;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.bttn, .bttn:link, .bttn:visited {
+    font-size: 2rem;
+    text-decoration: none;
+    padding: .4rem 1.5rem;
+    border-radius: 10rem;
+    display: inline-block;
+    transition: all 0.2s;
+    position: absolute;
+    top: 0.3rem;
+    right: 0.6rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+    .bttn:hover {
+        transform: translateY(-0.2rem);
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+    }
+
+        .bttn:hover::after {
+            transform: scaleX(1.5) scaleY(1.7);
+            opacity: 0;
+        }
+
+    .bttn:active, .bttn:focus {
+        transform: translateY(0.1rem);
+        outline: none;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+    }
+
+.bttn--green {
+    background-color: #55c57a;
+    color: #fff;
+}
+
+    .bttn--green::after {
+        background-color: #55c57a;
+    }
+
+.img-container {
+    position: relative;
+}
+
+.img-box {
+    position: absolute;
+    top: 6rem;
+    left: 12rem;
+}
+
+.svg {
+    width: 95%;
+}
