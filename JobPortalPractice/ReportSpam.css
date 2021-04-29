@@ -132,6 +132,15 @@ h4 {
         background-color: #ce1212;
     }
 
+.bttn--green {
+    background-color: #00e676;
+    color: #fff;
+}
+
+    .bttn--green::after {
+        background-color: #00e676;
+    }
+
 .bttn::after {
     content: "";
     height: 100%;

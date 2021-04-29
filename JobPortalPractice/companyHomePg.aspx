@@ -27,7 +27,7 @@
         
         <ul class="list-group">
           <li class="list-group-item">
-              <a href="ViewCompanyProfile.aspx">View Profile</a></li>
+              <a href="CompanyViewCompanyProfile.aspx">View Profile</a></li>
           <li class="list-group-item">
               <a href="CompanyPersonalDataEntryPg.aspx">Edit Profile</a></li>
           <li class="list-group-item">

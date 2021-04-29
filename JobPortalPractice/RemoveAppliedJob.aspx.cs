@@ -15,7 +15,6 @@ namespace JobPortalPractice
             string CS = "data source=.; database = OnlineJobPortal; integrated security=SSPI";
             string jobId = Request.Form.Get("jobId");
             string jobSeekerUserName = Request.Form.Get("jobSeekerUserName");
-            Response.Write(jobId + jobSeekerUserName);
 
             using (SqlConnection con = new SqlConnection(CS))
             {
@@ -24,8 +23,8 @@ namespace JobPortalPractice
                 cmd.Connection = con;
                 con.Open();
                 SqlDataReader rdr = cmd.ExecuteReader();
-                RemoveMessage.InnerHtml = jobId + "Removed Sucessfully" + jobSeekerUserName;
-                HomePageRedirect.InnerHtml = "Go to <a href='AppliedJob.aspx'>Applied Job Page</a>";              
+                //RemoveMessage.InnerHtml = jobId + "Removed Sucessfully" + jobSeekerUserName;
+                //RemoveMessageBody.InnerHtml = "Go to <a href=''>Applied Job Page</a>";              
             }
         }
     }

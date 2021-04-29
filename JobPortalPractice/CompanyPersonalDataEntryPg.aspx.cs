@@ -119,14 +119,11 @@ namespace JobPortalPractice
                         " state = '" + state + "'," +
                         " city = '" + city + "'" +
                         " WHERE username = '" + username + "';";
-                    Response.Write(cmd.CommandText);
                     cmd.Connection = con;
                     con.Open();
                     cmd.ExecuteNonQuery();
                     cmd.CommandText = "UPDATE usersTbl SET email = '" + email + "', password = '" + password + "' WHERE username = '" + username + "';";
-                    Response.Write(cmd.CommandText);
                     int totalRowsUpdated = cmd.ExecuteNonQuery();
-                    Response.Write("Total rows updated = " + totalRowsUpdated);
                 }
                 else if (personalTblUsername == "")
                 {
@@ -148,14 +145,11 @@ namespace JobPortalPractice
                     cmd.Connection = con;
                     con.Open();
                     int totalRowsEffected = cmd.ExecuteNonQuery();
-                    Response.Write("Total rows updated = " + totalRowsEffected);
                     //nameOfUserLabel.Text = "Tap edit button to Provide Your Personal Info";
 
                     cmd.CommandText = "UPDATE usersTbl SET email = '" + email + "', password = '" + password + "' WHERE username = '" + username + "';";
 
-                    Response.Write(cmd.CommandText);
                     int totalRowsUpdated = cmd.ExecuteNonQuery();
-                    Response.Write("Total rows updated = " + totalRowsUpdated);
                 }
             }
         }

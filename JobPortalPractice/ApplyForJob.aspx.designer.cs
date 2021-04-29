@@ -24,21 +24,21 @@ namespace JobPortalPractice
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// Message control.
+        /// MessageHeading control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Message;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl MessageHeading;
 
         /// <summary>
-        /// HomePageRedirect control.
+        /// MessageBody control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HomePageRedirect;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl MessageBody;
     }
 }

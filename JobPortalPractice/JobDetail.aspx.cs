@@ -48,7 +48,7 @@ namespace JobPortalPractice
                     Location.InnerHtml = rdr["Address"].ToString() + ", " + rdr["City"].ToString() + ", " + rdr["State"].ToString() + ", " + rdr["Country"].ToString() + ", " + rdr["ZipCode"].ToString();
                     
                     string requiements = rdr["QualificationRequired"].ToString();
-                    string[] requirementsList = skills.Split(',');
+                    string[] requirementsList = requiements.Split(',');
                     string requirementsContainer = "";
                     foreach (string requirement in requirementsList)
                     {

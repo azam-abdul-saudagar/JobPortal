@@ -33,7 +33,7 @@
         <div class="row">
             <div class="col-6">
                 <div class="heading">
-                    <h1 class="heading-primary">Find your job favorite and immediate</h1>
+                    <h1 class="heading-primary">Find your job favourite and immediate</h1>
                     <p class="heading-secondary">Search for your dream job while on the go with the best web-search web
                         platform available.</p>
                     <div class="search-section">

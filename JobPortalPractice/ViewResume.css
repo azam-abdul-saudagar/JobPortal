@@ -45,6 +45,12 @@ p, li {
     display: inline-block;
 }
 
+.jobSeekerUserName-box {
+    position: absolute;
+    left: -20%;
+    color: transparent;
+}
+
 .box {
     border-bottom: 2px solid #55c57a;
     border-radius: 5px;

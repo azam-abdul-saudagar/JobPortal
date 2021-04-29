@@ -18,7 +18,6 @@ namespace JobPortalPractice
             using (SqlConnection con = new SqlConnection(CS))
             {
                 SqlCommand cmd = new SqlCommand();
-                Response.Write(jobSeekerUserName);
                 cmd.CommandText = "SELECT * FROM tblResume WHERE username='" + jobSeekerUserName + "';";
                 cmd.Connection = con;
                 con.Open();
@@ -67,7 +66,6 @@ namespace JobPortalPractice
             using (SqlConnection con = new SqlConnection(CS))
             {
                 SqlCommand cmd = new SqlCommand();
-                Response.Write(jobSeekerUserName);
                 cmd.CommandText = "SELECT * FROM tblResume WHERE username='" + jobSeekerUserName + "';";
                 cmd.Connection = con;
                 con.Open();
@@ -103,10 +101,12 @@ namespace JobPortalPractice
                     "'" + skills + "'," +
                     "'" + experience + "'," +
                     "'" + country + "');";
-                Response.Write(cmd.CommandText);
                 cmd.Connection = con;
                 con.Open();
                 SqlDataReader rdr = cmd.ExecuteReader();
+                Results.InnerHtml = "<div class='alert alert-success' role='alert'>" +
+                                        "You have selected this candidate you can see him in selected candidate page!" +
+                                    "</div>";
             }
         }
     }

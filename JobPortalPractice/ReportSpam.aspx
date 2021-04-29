@@ -15,12 +15,13 @@
         <div>
             <div>
          <div class="login-box">
+        <div id ="ResultMessage" runat="server"></div>
         <h1 class="login-box__heading">Report Spam</h1>
         <div class="form-group form__group">
             <textarea rows="8" cols="80" class="form-control form__input" id="SpamMessageTextBox" placeholder="message"
                 required name="" runat="server" value=""></textarea>
         </div>
-        <asp:Button ID="ReportButton" class="bttn bttn--red" runat="server" Text="Report" OnClick="ReportButton_Click" />
+        <asp:Button ID="ReportButton" class="bttn bttn--green" runat="server" Text="Report" OnClick="ReportButton_Click" />
       </div>    
         </div>
     </form>

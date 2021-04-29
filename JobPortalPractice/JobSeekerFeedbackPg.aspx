@@ -13,8 +13,9 @@
 <body>
     <form id="form1" runat="server">
         <div>
-               <div>
+           <div>
          <div class="login-box">
+        <div id ="ResultMessage" runat="server"></div>
         <h1 class="login-box__heading">Feedback</h1>
         <div class="form-group form__group">
             <textarea rows="8" cols="80" class="form-control form__input" id="MessageTextBox" placeholder="message"

@@ -18,7 +18,6 @@ namespace JobPortalPractice
             using (SqlConnection con = new SqlConnection(CS))
             {
                 SqlCommand cmd = new SqlCommand();
-                Response.Write(jobSeekerUserName);
                 cmd.CommandText = "SELECT * FROM tblResume WHERE UserName='" + jobSeekerUserName + "';";
                 cmd.Connection = con;
                 con.Open();
@@ -52,13 +51,12 @@ namespace JobPortalPractice
         protected void UpdateResumeButton_Click(object sender, EventArgs e)
         {
             string CS = "data source=.; database = OnlineJobPortal; integrated security=SSPI";
-            string jobSeekerUserName = Request.Form.Get("jobSeekerUserName");
+            string jobSeekerUserName = Session["username"].ToString();
             string fetchedUserName = "";
 
             using (SqlConnection con = new SqlConnection(CS))
             {
                 SqlCommand cmd = new SqlCommand();
-                Response.Write(jobSeekerUserName);
                 cmd.CommandText = "SELECT * FROM tblResume WHERE UserName='" + jobSeekerUserName + "';";
                 cmd.Connection = con;
                 con.Open();
@@ -73,39 +71,31 @@ namespace JobPortalPractice
             }
 
             string UserName = fetchedUserName;
-
-            if (fetchedUserName == "")
+            if (UserName == "")
             {
                 using (SqlConnection con = new SqlConnection(CS))
                 {
                     SqlCommand cmd = new SqlCommand();
-                    Response.Write(jobSeekerUserName);
-                    cmd.CommandText = "INSERT INTO tblResume (UserName, FullName, JobTitle, Email, ContactNo, OfferedSalary, Age, InputState, Experience," +
-                        " RecentQualification, AboutYou, Education, WorkExperience, Skills, Contact, City, State, Country, FullAddess) " +
-                        "VALUES('" + UserName + "','" + FullName.Value + "','" +
-                        JobTitle.Value + "','" + Email.Value + "','" +
-                        ContactNo.Value + "','" + OfferedSalary.Value + "','" +
-                        Age.Value + "','" + InputState.Value + "','" +
-                        Experience.Value + "','" + RecentQualification.Value + "','" +
-                        AboutYou.Value + "','" + Education.Value + "','" +
-                        WorkExperience.Value + "','" + Skills.Value + "','" +
-                        Contact.Value + "','" + City.Value + "','" +
-                        State.Value + "','" + Country.Value + "','" +
-                        FullAddress.Value + "');";
-                    Response.Write(cmd.CommandText);
+                    cmd.CommandText = "INSERT INTO tblResume VALUES('" + jobSeekerUserName + "','" + FullName.Value + "','" +
+                    JobTitle.Value + "','" + Email.Value + "','" +
+                    ContactNo.Value + "','" + OfferedSalary.Value + "','" +
+                    Age.Value + "','" + InputState.Value + "','" +
+                    Experience.Value + "','" + RecentQualification.Value + "','" +
+                    AboutYou.Value + "','" + Education.Value + "','" +
+                    WorkExperience.Value + "','" + Skills.Value + "','" +
+                    Contact.Value + "','" + City.Value + "','" +
+                    State.Value + "','" + Country.Value + "','" +
+                    FullAddress.Value + "');";
                     cmd.Connection = con;
                     con.Open();
                     SqlDataReader rdr = cmd.ExecuteReader();
-
-                    //Getting the data of the user from tblResume
-                    while (rdr.Read())
-                    {
-                        //fetching the username from tblResume
-                        
-                        fetchedUserName = rdr["UserName"].ToString();
-                    }
                 }
             }
+            else if (fetchedUserName != "")
+            {
+
+            }
+
         }
     }
 }

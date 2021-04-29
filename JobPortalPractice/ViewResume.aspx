@@ -5,12 +5,17 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Resume</title>
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--css-->
     <link rel="stylesheet" href="ViewResume.css">
+
 </head>
 <body>
     <form id="form1" runat="server">
+        <div id="Results" runat="server"></div>
         <div>
-            <h1 class="JobSeekerUserName" id="JobSeekerUserName" runat="server"></h1>
+            
             <div class="header">
         <div class="box">
             <div class="header__content">
@@ -59,8 +64,8 @@
             </p>
         </div>
         <div class="body__sub-part">
-            <h3 id="WorkExperience" runat="server">Work Experience</h3>
-            <p>
+            <h3>Work Experience</h3>
+            <p id="WorkExperience" runat="server">
             <ul>
                 <li>There are many variations of passages of Lorem Ipsum available</li>
                 <li>There are many variations of passages of Lorem Ipsum available</li>
@@ -105,5 +110,8 @@
         <asp:Button ID="SelectCandidateButton" runat="server" type="submit" class="btn btn--green" Text="Select this candidate" OnClick="SelectCandidateButton_Click" />
         </div>
     </form>
+    <div class="jobSeekerUserName-box">
+                <h1 class="JobSeekerUserName" id="JobSeekerUserName" runat="server"></h1>
+            </div>
 </body>
 </html>

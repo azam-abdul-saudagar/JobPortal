@@ -81,12 +81,14 @@
     <Content Include="CompanyHomePg.css" />
     <Content Include="CompanyPersonalDataEntryPg.aspx" />
     <Content Include="CompanyPersonalDataEntryPg.css" />
+    <Content Include="CompanyViewCompanyProfile.aspx" />
     <Content Include="HomePg.aspx" />
     <Content Include="HomePg.css" />
     <Content Include="Images\peoplesearch3.png" />
     <Content Include="JobSeekerFeedbackPg.aspx" />
     <Content Include="JobSeekerFeedbackPg.css" />
     <Content Include="JobSeekerHelpPg.aspx" />
+    <Content Include="JobSeekerPersonalDataEntryPg.css" />
     <Content Include="Login.css" />
     <Content Include="RemoveAppliedJob.aspx" />
     <Content Include="JobApplications.aspx" />
@@ -184,6 +186,13 @@
     </Compile>
     <Compile Include="CompanyPersonalDataEntryPg.aspx.designer.cs">
       <DependentUpon>CompanyPersonalDataEntryPg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyViewCompanyProfile.aspx.cs">
+      <DependentUpon>CompanyViewCompanyProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompanyViewCompanyProfile.aspx.designer.cs">
+      <DependentUpon>CompanyViewCompanyProfile.aspx</DependentUpon>
     </Compile>
     <Compile Include="HomePg.aspx.cs">
       <DependentUpon>HomePg.aspx</DependentUpon>

@@ -8,14 +8,13 @@ using System.Data.SqlClient;
 
 namespace JobPortalPractice
 {
-    public partial class ViewCompanyProfile : System.Web.UI.Page
+    public partial class CompanyViewCompanyProfile : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
             string CS = "data source=.; database = OnlineJobPortal; integrated security=SSPI";
             string id = Request.QueryString["jobId"];
-            string companyUserName = "";
-            //Response.Write("id" + id);
+            string companyUserName = Session["username"].ToString();
 
             using (SqlConnection con = new SqlConnection(CS))
             {
@@ -31,11 +30,8 @@ namespace JobPortalPractice
                     //fetching the name from the companyPersonalTbl
                     companyUserName = rdr["CompanyUsername"].ToString();
                 }
-
-
             }
 
-            Response.Write("Company Username" + companyUserName);
             using (SqlConnection con = new SqlConnection(CS))
             {
                 SqlCommand cmd = new SqlCommand();
@@ -62,29 +58,7 @@ namespace JobPortalPractice
                     Country.InnerText = rdr["country"].ToString();
                     /*City.InnerText = rdr["city"].ToString();*/
                 }
-
-
             }
-
-            /*using (SqlConnection con = new SqlConnection(CS))
-            {
-                SqlCommand cmd = new SqlCommand();
-                cmd.CommandText = "SELECT * FROM usersTbl WHERE username='" + username + "';";
-                cmd.Connection = con;
-                con.Open();
-                SqlDataReader rdr = cmd.ExecuteReader();
-
-                //Getting the name of the company from companyPersonalTbl to display on nameLabel
-                while (rdr.Read())
-                {
-                    //fetching the data from the usersTbl
-                    EmailTextBox.Value = rdr["email"].ToString();
-                    PasswordTextBox.Value = rdr["password"].ToString();
-
-                }
-            }*/
-
-
         }
     }
-}
+    }

@@ -215,7 +215,7 @@ namespace JobPortalPractice
 
         protected void ApplyButton_Click(object sender, EventArgs e)
         {
-            Response.Write("succcessfully applied for the job");
+            Response.Write("You have successfully applied for the job");
         }
     }
 }

@@ -11,7 +11,7 @@ namespace JobPortalPractice
 {
 
 
-    public partial class JobSeekerDataEntryPg
+    public partial class CompanyViewCompanyProfile
     {
 
         /// <summary>
@@ -24,84 +24,102 @@ namespace JobPortalPractice
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// FNameTextBox control.
+        /// CompanyName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox FNameTextBox;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl CompanyName;
 
         /// <summary>
-        /// LNameTextBox control.
+        /// CompanyTagline control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox LNameTextBox;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl CompanyTagline;
 
         /// <summary>
-        /// ContactNoTextBox control.
+        /// Category control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ContactNoTextBox;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Category;
 
         /// <summary>
-        /// GenderTextBox control.
+        /// OwnerName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox GenderTextBox;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl OwnerName;
 
         /// <summary>
-        /// EmailTextBox control.
+        /// ContactNo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox EmailTextBox;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl ContactNo;
 
         /// <summary>
-        /// PasswordTextBox control.
+        /// Address control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox PasswordTextBox;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Address;
 
         /// <summary>
-        /// DobTextBox control.
+        /// Facebook control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox DobTextBox;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Facebook;
 
         /// <summary>
-        /// FacebookTextBox control.
+        /// Twitter control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox FacebookTextBox;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Twitter;
 
         /// <summary>
-        /// Button1 control.
+        /// LinkedIn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl LinkedIn;
+
+        /// <summary>
+        /// WorkingTime control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl WorkingTime;
+
+        /// <summary>
+        /// Country control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Country;
     }
 }

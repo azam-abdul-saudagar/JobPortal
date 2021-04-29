@@ -45,7 +45,6 @@ namespace JobPortalPractice
 
             if (jobTitle == "")
             {
-                Response.Write("Data not found go ahead");
                 using (SqlConnection con = new SqlConnection(CS))
                 {
                     SqlCommand cmd = new SqlCommand();
@@ -101,16 +100,17 @@ namespace JobPortalPractice
                         "'" + jobSeekerExperience + "'" + "," +
                         "'" + location + "'" + "," +
                         "'" + skills + "')";
-                    Response.Write(cmd.CommandText);
                     cmd.Connection = con;
                     con.Open();
                     SqlDataReader rdr = cmd.ExecuteReader();
                 }
-                Message.Text = "Successfully applied for the" + jobId + "job " + jobSeekerUserName;
+                MessageHeading.InnerText = "Successfully applied for the job";
+                MessageBody.InnerText = "You have successfull applied for the job whose id is " + jobId;
             }
             else
             {
-                Message.Text = "You have already applied for the" + jobId + "job " + jobSeekerUserName;
+                MessageHeading.InnerText = "Already applied for the job";
+                MessageBody.InnerText = "You have already applied for the job whose id is " + jobId;
             }
         }
     }

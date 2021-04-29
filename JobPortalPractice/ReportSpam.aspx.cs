@@ -72,7 +72,9 @@ namespace JobPortalPractice
                 int totalRowsEffected = cmd.ExecuteNonQuery();
             }
 
-
+            ResultMessage.InnerHtml = "<div class='alert alert-success' role='alert'>" +
+                                             "Message sent successfully!" +
+                                       "</div>";
         }
     }
 }

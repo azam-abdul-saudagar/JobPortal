@@ -51,11 +51,12 @@ namespace JobPortalPractice
                    "'" + contactNo + "'," +
                    "'" + email + "'," +
                    "'" + message + "'" + ")";
-                Response.Write(cmd.CommandText);
                 cmd.Connection = con;
                 con.Open();
                 int totalRowsEffected = cmd.ExecuteNonQuery();
-                Response.Write("Total rows updated = " + totalRowsEffected);
+                ResultMessage.InnerHtml = "<div class='alert alert-success' role='alert'>" +
+                                              "Message sent successfully!" +
+                                        "</div>";
             }
         }
     }

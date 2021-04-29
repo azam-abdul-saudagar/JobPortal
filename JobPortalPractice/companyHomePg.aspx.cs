@@ -196,10 +196,6 @@ namespace JobPortalPractice
                 "<input type='hidden' name='ID' value='" + "" + "' />" +
                 "<button class='job-btn btn btn-light mb-4' type='submit' name='jobSeekerUserName' value='" + jobSeekerUserName + "'>VIEW RESUME</button>" +
               "</form>" +
-              "<form class='' action='JobDetail.aspx' method='post'>" +
-                "<input type='hidden' name='jobID' value='" + "jobId" + "' />" +
-                "<button class='job-btn btn btn-light' type='submit'>VIEW JOB</button>" +
-              "</form>" +
             "</div>" +
           "</div>" +
         "</div>";

@@ -81,7 +81,6 @@
                     <div class="col-lg-6">
                         <div class="form-group">
                             <select id="InputState" class="form-control form__input" required name="" runat="server">
-                                <option selected>Gender</option>
                                 <option>Male</option>
                                 <option>Female</option>
                             </select>

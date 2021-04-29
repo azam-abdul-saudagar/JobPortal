@@ -18,7 +18,7 @@ namespace JobPortalPractice
         protected void SendButton_Click(object sender, EventArgs e)
         {
             string CS = "data source=.; database = OnlineJobPortal; integrated security=SSPI";
-            string message = MessageTextBox.Text;
+            string message = MessageTextBox.Value;
             string jobSeekerUserName = Session["username"].ToString();
             string jobSeekerName = "";
             string email = "";
@@ -51,11 +51,12 @@ namespace JobPortalPractice
                    "'" + contactNo + "'," +
                    "'" + email + "'," +
                    "'" + message + "'" + ")";
-                Response.Write(cmd.CommandText);
                 cmd.Connection = con;
                 con.Open();
                 int totalRowsEffected = cmd.ExecuteNonQuery();
-                Response.Write("Total rows updated = " + totalRowsEffected);
+                ResultMessage.InnerHtml = "<div class='alert alert-success' role='alert'>" +
+                                              "Message sent successfully!" +
+                                        "</div>";
             }
         }
     }
